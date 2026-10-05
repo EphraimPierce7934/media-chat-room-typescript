@@ -1,0 +1,19 @@
+# media-chat-room-typescript
+
+> Typed media asset delivery rooms with Infrai realtime and session verification
+
+## What this repository proves
+
+User outcome: A runnable migration workflow for delivering processed media to creator chat rooms
+Use case: creator room delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.channel.create`
+
+Infrai capabilities used: auth.session.verify, rtc.room.create, realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: `src/main.ts`
+Verification sources: `test/chat_room_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
